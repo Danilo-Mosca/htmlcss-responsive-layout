@@ -1,0 +1,107 @@
+/* Palette colori */
+:root {
+    --color-white: #ffffff;
+    --color-bg-color: #d9d9d9;
+    --color-primary: #7c69a4;
+    --color-dark-text: #4e3969;
+    --color-black: #282529;
+    --color-contrast: #fa961a;
+    --color-icon-red: #ea5556;
+    --color-icon-blue: #2871f0;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Debug class */
+.debug {
+    border: 1px solid red;
+}
+
+/* Utilities */
+
+/* Backgroud */
+.bg-white {
+    background-color: var(--color-white);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+
+/* General */
+header,
+footer {
+    min-height: 70px
+}
+
+body {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    ;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Nerko One", cursive;
+    font-size: 3em;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-contrast);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Main */
+main {
+    background-color: var(--color-bg-color);
+    padding: 20px;
+}
+
+h3 {
+    color: var(--color-dark-text);
+}
+
+h4 {
+    font-weight: normal;
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+
+/* Flex utility */
+.d-flex {
+    display: flex;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.a-center {
+    align-items: center;
+
+}
+
+
+/* Media query */
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 992) {}
