@@ -52,7 +52,7 @@
 
     body {
         font-family: Montserrat, 'Helvetica Neue', sans-serif;
-        ;
+        background-color: var(--color-bg-color);
     }
 
     .container {
@@ -81,6 +81,10 @@
 
     .wrap {
         flex-wrap: wrap;
+    }
+
+    .j-start {
+        justify-content: flex-start;
     }
 
     .j-center {
@@ -176,6 +180,7 @@
     }
 
     .card-icon {
+        cursor: pointer;
         background-color: var(--color-white);
         border-radius: 40%;
         padding: 10px 15px;
@@ -202,7 +207,13 @@
     .social-icon>.card-icon>.fa-youtube {
         color: #E62222;
     }
-
+    
+    /* Sezione ads (advertising) * 
+     * -------------------- */
+    aside {
+        display: none;
+        margin-bottom: 30px;
+    }
 
 
     /* Sezione recipe-description * 
@@ -236,6 +247,7 @@
     .company-data {
         padding-bottom: 5px;
     }
+
     .company-data p:first-child {
         font-weight: bold;
     }
@@ -254,13 +266,33 @@
     @media screen and (min-width: 576px) {}
 
     @media screen and (min-width: 768px) {
+        header.j-start {
+            justify-content: flex-start;
+        }
+
         main {
             padding: 40px;
         }
 
-        header .j-space-between {
-            justify-content: space-between;
+        .card-section h3::after {
+            content: " (Dolce Tradizionale)";
         }
+
+        .content-recipe ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content-recipe ul li {
+            width: calc(100% / 3);
+            flex-wrap: wrap;
+        }
+        .card-icon {
+            border-radius: 20px;
+            padding: 10px 45px;
+    }
+
+    aside {
+        display: block;
     }
 
     @media screen and (min-width: 992px) {
