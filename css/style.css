@@ -17,7 +17,8 @@
         box-sizing: border-box;
     }
 
-    Debug class .debug {
+    /* Debug class  */
+    .debug {
         border: 1px solid red;
     }
 
@@ -74,6 +75,14 @@
         display: flex;
     }
 
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
     .j-center {
         justify-content: center;
     }
@@ -82,9 +91,14 @@
         justify-content: space-between;
     }
 
+    .j-space-around {
+        justify-content: space-around;
+    }
+
     .a-center {
         align-items: center;
     }
+
 
     /* Main */
     main {
@@ -196,18 +210,45 @@
     .recipe-description {
         margin-bottom: 25px;
     }
+
     .recipe-description hr {
         width: 15%;
         border: 1px solid var(--color-contrast);
         margin-top: 20px;
     }
+
     .image-description {
         width: 70%;
         margin: 0 auto;
     }
+
     .recipe-description p {
         margin-top: 20px;
     }
+
+    /* Sezione footer * 
+     * -------------------- */
+    footer {
+        padding: 20px 30px;
+        line-height: 25px;
+    }
+
+    .company-data {
+        padding-bottom: 5px;
+    }
+    .company-data p:first-child {
+        font-weight: bold;
+    }
+
+    .footer-menu ul li>a {
+        color: var(--color-white);
+    }
+
+    .footer-menu ul {
+        gap: 25px;
+    }
+
+
 
     /* Media query */
     @media screen and (min-width: 576px) {}
@@ -223,6 +264,7 @@
     }
 
     @media screen and (min-width: 992px) {
+
         .j-space-between {
             justify-content: space-between;
         }
