@@ -19,9 +19,9 @@
 }
 
 /* Debug class  */
-/* .debug {
+.debug {
     border: 1px solid red;
-} */
+}
 
 /* Utilities */
 
@@ -152,20 +152,20 @@ ul {
     margin-top: 10px;
 }
 
-.content-recipe {
+.content-recipe-card {
     padding: 25px 0px;
 }
 
-.content-recipe div>h5 {
+.content-recipe-card div>h5 {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-.content-recipe div ul>li {
+.content-recipe-card div ul>li {
     padding: 8px 0;
 }
 
-.content-recipe div ul>li span {
+.content-recipe-card div ul>li span {
     font-weight: bold;
 }
 
@@ -280,9 +280,12 @@ footer {
 
 @media screen and (min-width: 768px) {
 
+    /* Assegno ad header la classe .j-start per riferimento,
+cioè non la dichiaro direttamente sull'html
+ma la aggiungo dopo */
     header.j-start {
         justify-content: flex-start;
-        margin-left: 30px;
+        padding-left: 30px;
     }
 
     main {
@@ -293,12 +296,12 @@ footer {
         content: " (Dolce Tradizionale)";
     }
 
-    .content-recipe ul {
+    .content-recipe-card ul {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .content-recipe ul li {
+    .content-recipe-card ul li {
         width: calc(100% / 3);
         flex-wrap: wrap;
     }
@@ -340,24 +343,27 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-    .content-recipe {
+    .content-recipe-card {
         display: flex;
     }
 
-    .content-recipe .content-list {
+    .content-recipe-card .content-list {
         width: 100%;
     }
 
-    .content-list {
+    /* Aumento il margine tra la foto del tiramisù
+    nella sezione card-section e il test "In Breve"
+    della ricetta */
+    .content-recipe-card {
         margin: 0 40px;
     }
 
-    .card-recipe img {
+    .content-recipe-card img {
         width: 60%;
         margin-top: 0px;
     }
 
-    .card-recipe .content-recipe ul {
+    .card-recipe .content-recipe-card ul {
         flex-direction: column;
     }
 
@@ -375,13 +381,7 @@ footer {
         border-radius: 20px;
         padding: 10px 30px;
     }
-
-    /* Allungo in larghezza il content-recipe al 100% del
-    suo contenitore padre */
-    .content-recipe p {
-        width: 100%;
-    }
-
+    
     .image-description img {
         width: 100%;
     }
