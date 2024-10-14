@@ -9,7 +9,7 @@
     --color-icon-red: #ea5556;
     --color-icon-blue: #2871f0;
     --color-grey-text: #A9A9AA;
-
+}
     /* Reset */
     * {
         margin: 0;
@@ -18,9 +18,9 @@
     }
 
     /* Debug class  */
-    .debug {
+    /* .debug {
         border: 1px solid red;
-    }
+    } */
 
     /* Utilities */
 
@@ -152,18 +152,19 @@
     }
 
     .content-recipe {
-        padding: 25px 20px;
+        padding: 25px 0px;
     }
 
-    .content-recipe>h5 {
+    .content-recipe div>h5 {
+        padding-top: 25px;
         padding-bottom: 25px;
     }
 
-    .content-recipe ul>li {
+    .content-recipe div ul>li {
         padding: 8px 0;
     }
 
-    .content-recipe ul>li span {
+    .content-recipe div ul>li span {
         font-weight: bold;
     }
 
@@ -176,6 +177,7 @@
     /* Testo icone in MAIUSCOLO E NASCOSTO*/
     .social-icon .card-icon>span {
         text-transform: uppercase;
+        font-family: Montserrat, 'Helvetica Neue', sans-serif;
         display: none;
     }
 
@@ -263,7 +265,9 @@
 
 
     /* Media query */
-    @media screen and (min-width: 576px) {}
+    @media screen and (min-width: 576px) {
+
+    }
 
     @media screen and (min-width: 768px) {
 
@@ -308,21 +312,55 @@
             float: left;
             margin-right: 10px;
         }
+        .card-section p {
+            width: 60%;
+        }
 
         .content-recipe .image-description img {
             margin-right: 10px;
             margin-bottom: 0px;
         }
-
+       
         .content-recipe .clearfix::after {
             content: "";
             clear: both;
             display: table;
         }
+    }
 
-        @media screen and (min-width: 992px) {
-
-            .j-space-between {
-                justify-content: space-between;
-            }
+    @media screen and (min-width: 992px) {
+        .content-recipe {
+            display: flex;
         }
+
+        .content-recipe .content-list {
+            width: 40%;
+            padding-left: 40px;
+        }
+
+        .card-recipe img {
+            width: 60%;
+            margin-top: 0px;
+        }
+
+        .card-recipe .content-recipe ul {
+            flex-direction: column;
+        }
+
+        .social-icon .card-icon>span {
+            display: block;
+            flex-wrap: nowrap;
+        }
+        .content-recipe p {
+            width: 60%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer .company-data {
+            align-items: flex-start;
+        }
+    }
