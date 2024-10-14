@@ -233,8 +233,8 @@
         margin: 0 auto;
     }
 
-    .recipe-description p {
-        margin-top: 20px;
+    .content-recipe .image-description img {
+        margin-bottom: 20px;
     }
 
     /* Sezione footer * 
@@ -306,10 +306,12 @@
         .content-recipe .image-description {
             width: 40%;
             float: left;
+            margin-right: 10px;
         }
 
         .content-recipe .image-description img {
             margin-right: 10px;
+            margin-bottom: 0px;
         }
 
         .content-recipe .clearfix::after {
