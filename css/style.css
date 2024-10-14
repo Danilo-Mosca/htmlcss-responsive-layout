@@ -10,357 +10,389 @@
     --color-icon-blue: #2871f0;
     --color-grey-text: #A9A9AA;
 }
-    /* Reset */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
-    /* Debug class  */
-    /* .debug {
-        border: 1px solid red;
-    } */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    /* Utilities */
+/* Debug class  */
+/* .debug {
+    border: 1px solid red;
+} */
 
-    /* CLASSE IMMAGINI FLUIDE */
-    img {
-        width: 100%;
-        display: block;
-    }
+/* Utilities */
 
-    /* Backgroud */
-    .bg-white {
-        background-color: var(--color-white);
-    }
+/* CLASSE IMMAGINI FLUIDE */
+img {
+    width: 100%;
+    display: block;
+}
 
-    .bg-primary {
-        background-color: var(--color-primary);
-    }
+/* Backgroud */
+.bg-white {
+    background-color: var(--color-white);
+}
 
-    .text-white {
-        color: var(--color-white);
-    }
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.text-white {
+    color: var(--color-white);
+}
 
 
-    /* General */
-    header,
-    footer {
-        min-height: 70px
-    }
+/* General */
+header,
+footer {
+    min-height: 70px
+}
 
-    body {
-        font-family: Montserrat, 'Helvetica Neue', sans-serif;
-        background-color: var(--color-bg-color);
-    }
+body {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    background-color: var(--color-bg-color);
+}
 
-    .container {
-        max-width: 1080px;
-        margin: 0 auto;
-    }
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
 
-    h1 {
-        font-family: "Nerko One", cursive;
-        font-size: 3em;
-        font-weight: 400;
-        font-style: normal;
-        color: var(--color-contrast);
-        text-transform: uppercase;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
+h1 {
+    font-family: "Nerko One", cursive;
+    font-size: 3em;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-contrast);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 
-    /* Flex utility */
-    .d-flex {
-        display: flex;
-    }
+/* Flex utility */
+.d-flex {
+    display: flex;
+}
 
-    .flex-column {
-        flex-direction: column;
-    }
+.flex-column {
+    flex-direction: column;
+}
 
-    .wrap {
-        flex-wrap: wrap;
-    }
+.wrap {
+    flex-wrap: wrap;
+}
 
-    /* .j-start {
+/* .j-start {
         justify-content: flex-start;
     } */
 
-    .j-center {
-        justify-content: center;
+.j-center {
+    justify-content: center;
+}
+
+.j-space-between {
+    justify-content: space-between;
+}
+
+.j-space-around {
+    justify-content: space-around;
+}
+
+.a-center {
+    align-items: center;
+}
+
+
+/* Main */
+main {
+    background-color: var(--color-bg-color);
+    padding: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+h3 {
+    color: var(--color-dark-text);
+    font-size: 2em;
+    font-weight: 800;
+    padding: 8px 0;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 1.2em;
+    color: var(--color-grey-text);
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+    list-style-position: outside;
+}
+
+
+/* Sezione card-section * 
+     * -------------------- */
+.card-recipe {
+    background-color: var(--color-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 18px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card-recipe img {
+    margin-top: 10px;
+}
+
+.content-recipe {
+    padding: 25px 0px;
+}
+
+.content-recipe div>h5 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.content-recipe div ul>li {
+    padding: 8px 0;
+}
+
+.content-recipe div ul>li span {
+    font-weight: bold;
+}
+
+.content-list {
+    margin: 0 20px;
+}
+
+/* Sezione social-icon * 
+     * -------------------- */
+.social-icon {
+    padding: 35px 0;
+}
+
+/* Testo icone in MAIUSCOLO E NASCOSTO*/
+.social-icon .card-icon>a>span {
+    text-transform: uppercase;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    display: none;
+}
+
+.card-icon {
+    cursor: pointer;
+    background-color: var(--color-white);
+    border-radius: 40%;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.card-icon a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+/* Colore  icone */
+.social-icon>.card-icon>a>.fa-facebook {
+    color: #1A77F3;
+}
+
+.social-icon>.card-icon>a>.fa-twitter {
+    color: #009EFF;
+}
+
+.social-icon>.card-icon>a>.fa-instagram {
+    color: #DE6E8A;
+}
+
+.social-icon>.card-icon>a>.fa-pinterest {
+    color: #E62423;
+}
+
+.social-icon>.card-icon>a>.fa-youtube {
+    color: #E62222;
+}
+
+/* Sezione ads (advertising) * 
+     * -------------------- */
+aside {
+    display: none;
+    margin-bottom: 30px;
+}
+
+
+/* Sezione recipe-description * 
+     * -------------------- */
+.recipe-description {
+    margin-bottom: 25px;
+}
+
+.recipe-description hr {
+    width: 15%;
+    border: 1px solid var(--color-contrast);
+    margin-top: 20px;
+}
+
+.image-description {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content-recipe .image-description img {
+    margin-bottom: 20px;
+}
+
+/* Sezione footer * 
+     * -------------------- */
+footer {
+    padding: 20px 30px;
+    line-height: 25px;
+}
+
+.company-data {
+    padding-bottom: 5px;
+}
+
+.company-data p:first-child {
+    font-weight: bold;
+}
+
+.footer-menu ul li>a {
+    color: var(--color-white);
+}
+
+.footer-menu ul {
+    gap: 25px;
+}
+
+
+
+/* Media query */
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+
+    header.j-start {
+        justify-content: flex-start;
+        margin-left: 30px;
     }
 
-    .j-space-between {
-        justify-content: space-between;
-    }
-
-    .j-space-around {
-        justify-content: space-around;
-    }
-
-    .a-center {
-        align-items: center;
-    }
-
-
-    /* Main */
     main {
-        background-color: var(--color-bg-color);
-        padding: 20px;
+        padding: 40px;
     }
 
-    h2 {
-        text-transform: uppercase;
-        font-size: 1.8em;
-        font-weight: 500;
+    .card-section h3::after {
+        content: " (Dolce Tradizionale)";
     }
 
-    h3 {
-        color: var(--color-dark-text);
-        font-size: 2em;
-        font-weight: 800;
-        padding: 8px 0;
+    .content-recipe ul {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    h4 {
-        font-weight: normal;
-        font-size: 1.2em;
-        color: var(--color-grey-text);
-        text-transform: uppercase;
-    }
-
-    h5 {
-        font-size: 1.2em;
-    }
-
-    ul {
-        list-style: none;
-        list-style-position: outside;
-    }
-
-
-    /* Sezione card-section * 
-     * -------------------- */
-    .card-recipe {
-        background-color: var(--color-bg-color);
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 18px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    }
-
-    .card-recipe img {
-        margin-top: 10px;
-    }
-
-    .content-recipe {
-        padding: 25px 0px;
-    }
-
-    .content-recipe div>h5 {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-
-    .content-recipe div ul>li {
-        padding: 8px 0;
-    }
-
-    .content-recipe div ul>li span {
-        font-weight: bold;
-    }
-
-    /* Sezione social-icon * 
-     * -------------------- */
-    .social-icon {
-        padding: 35px 0;
-    }
-
-    /* Testo icone in MAIUSCOLO E NASCOSTO*/
-    .social-icon .card-icon>span {
-        text-transform: uppercase;
-        font-family: Montserrat, 'Helvetica Neue', sans-serif;
-        display: none;
+    .content-recipe ul li {
+        width: calc(100% / 3);
+        flex-wrap: wrap;
     }
 
     .card-icon {
-        cursor: pointer;
-        background-color: var(--color-white);
-        border-radius: 40%;
-        padding: 10px 15px;
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        border-radius: 20px;
+        padding: 10px 45px;
     }
 
-    /* Colore  icone */
-    .social-icon>.card-icon>.fa-facebook {
-        color: #1A77F3;
-    }
-
-    .social-icon>.card-icon>.fa-twitter {
-        color: #009EFF;
-    }
-
-    .social-icon>.card-icon>.fa-instagram {
-        color: #DE6E8A;
-    }
-
-    .social-icon>.card-icon>.fa-pinterest {
-        color: #E62423;
-    }
-
-    .social-icon>.card-icon>.fa-youtube {
-        color: #E62222;
-    }
-
-    /* Sezione ads (advertising) * 
-     * -------------------- */
     aside {
-        display: none;
-        margin-bottom: 30px;
+        display: block;
     }
 
-
-    /* Sezione recipe-description * 
-     * -------------------- */
-    .recipe-description {
-        margin-bottom: 25px;
+    .content-recipe {
+        margin: 0;
     }
 
-    .recipe-description hr {
-        width: 15%;
-        border: 1px solid var(--color-contrast);
-        margin-top: 20px;
+    .content-recipe .image-description {
+        width: 40%;
+        float: left;
+        margin-right: 10px;
     }
 
-    .image-description {
-        width: 70%;
-        margin: 0 auto;
+    .card-section p {
+        width: 60%;
     }
 
     .content-recipe .image-description img {
-        margin-bottom: 20px;
+        width: 100%;
+        margin-right: 10px;
+        margin-bottom: 0px;
     }
 
-    /* Sezione footer * 
-     * -------------------- */
+    .content-recipe .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content-recipe {
+        display: flex;
+    }
+
+    .content-recipe .content-list {
+        width: 100%;
+    }
+
+    .content-list {
+        margin: 0 40px;
+    }
+
+    .card-recipe img {
+        width: 60%;
+        margin-top: 0px;
+    }
+
+    .card-recipe .content-recipe ul {
+        flex-direction: column;
+    }
+
+    .social-icon .card-icon>a>span {
+        display: block;
+    }
+
+    /* Allungo il contenuto delle list item ricette 
+    al 100% del suo contenitore padre */
+    .content-list ul li {
+        width: 100%;
+    }
+
+    .card-icon {
+        border-radius: 20px;
+        padding: 10px 30px;
+    }
+
+    /* Allungo in larghezza il content-recipe al 100% del
+    suo contenitore padre */
+    .content-recipe p {
+        width: 100%;
+    }
+
+    .image-description img {
+        width: 100%;
+    }
+
     footer {
-        padding: 20px 30px;
-        line-height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .company-data {
-        padding-bottom: 5px;
+    footer .company-data {
+        align-items: flex-start;
     }
-
-    .company-data p:first-child {
-        font-weight: bold;
-    }
-
-    .footer-menu ul li>a {
-        color: var(--color-white);
-    }
-
-    .footer-menu ul {
-        gap: 25px;
-    }
-
-
-
-    /* Media query */
-    @media screen and (min-width: 576px) {
-
-    }
-
-    @media screen and (min-width: 768px) {
-
-        header.j-start {
-            justify-content: flex-start;
-            margin-left: 30px;
-        }
-
-        main {
-            padding: 40px;
-        }
-
-        .card-section h3::after {
-            content: " (Dolce Tradizionale)";
-        }
-
-        .content-recipe ul {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .content-recipe ul li {
-            width: calc(100% / 3);
-            flex-wrap: wrap;
-        }
-
-        .card-icon {
-            border-radius: 20px;
-            padding: 10px 45px;
-        }
-
-        aside {
-            display: block;
-        }
-
-        .content-recipe {
-            margin: 0;
-        }
-
-        .content-recipe .image-description {
-            width: 40%;
-            float: left;
-            margin-right: 10px;
-        }
-        .card-section p {
-            width: 60%;
-        }
-
-        .content-recipe .image-description img {
-            margin-right: 10px;
-            margin-bottom: 0px;
-        }
-       
-        .content-recipe .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-    }
-
-    @media screen and (min-width: 992px) {
-        .content-recipe {
-            display: flex;
-        }
-
-        .content-recipe .content-list {
-            width: 40%;
-            padding-left: 40px;
-        }
-
-        .card-recipe img {
-            width: 60%;
-            margin-top: 0px;
-        }
-
-        .card-recipe .content-recipe ul {
-            flex-direction: column;
-        }
-
-        .social-icon .card-icon>span {
-            display: block;
-            flex-wrap: nowrap;
-        }
-        .content-recipe p {
-            width: 60%;
-        }
-
-        footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        footer .company-data {
-            align-items: flex-start;
-        }
-    }
+}
